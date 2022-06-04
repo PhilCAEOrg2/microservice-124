@@ -116,7 +116,7 @@ public class ResTest {
     
         
     try {
-      c.setLogin(testAgentAbel.getIdentifier(), testPassAbel);
+      c.setLogin(testAgentEve.getIdentifier(), testPassEve);
       ClientResponse result = c.sendRequest("GET", mainPath + "/test", "");
       Object response = JSONValue.parse(result.getResponse().trim());
       // Response body has field "x" has type JSON Object
